@@ -1,0 +1,148 @@
+@import "base";
+.student-container {
+    margin: 0 auto;
+    width: 760px;
+    text-align: center;
+    position: relative;
+}
+
+.student-show-div {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.active {
+    color: black;
+    background: white;
+    border: 1px solid #ccc;
+    @include prefixer(box-shadow, -3px -3px #ccc);
+}
+
+// 三个导航列表
+ul {
+    margin-left: 160px;
+    li {
+        border: 1px solid #314F93;
+        color: white;
+        background: #314F93;
+        line-height: 50px;
+        width: 100px;
+        margin-right: 20px;
+        float: left;
+        @include prefixer(border-radius, 5px);
+        @include prefixer(box-shadow, 3px 3px #ccc);
+        &:hover {
+            border: 1px solid #ccc;
+            cursor: pointer;
+            color: black;
+            background: white;
+        }
+    }
+}
+
+// 介绍信填写div
+.intro-letter-div {
+    width: 600px;
+    text-align: right;
+    label {
+        font-weight: bold;
+    }
+    input {
+        width: 300px;
+        font-size: 16px;
+        height: 32px;
+        margin-bottom: 5px;
+    }
+    span { // 提示错误信息
+        line-height: 32px;
+        color: red;
+        position: absolute;
+        right: 80px;
+    }
+    button { // 提交
+        width: 74px;
+        height: 42px;
+        font-size: 18px;
+        color: white;
+        background: #428bca;
+        @include prefixer(border-radius, 5px);
+        &:hover {
+            background: #3071a9;
+            cursor: pointer;
+        }
+        &:focus {
+            background: #3071a9;
+        }
+    }
+}
+
+// 回执上传div
+.return-receipt-div {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    button {
+        margin-top: 20px;
+        width: 74px;
+        height: 42px;
+        font-size: 18px;
+        color: white;
+        background: #428bca;
+        @include prefixer(border-radius, 5px);
+        &:hover {
+            background: #3071a9;
+            cursor: pointer;
+        }
+        &:focus {
+            background: #3071a9;
+        }
+    }
+}
+
+// 上传图片的div
+.upload-img-div {
+    position: relative;
+    left: 50%;
+    @include prefixer(transform, translate(-50%));
+    @include fullBg(192px, 192px, "icon_picture.png");
+    input[type="file"] {
+        border: none;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        opacity: 0;
+    }
+    .preview-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        max-width: 98%;
+        max-height: 98%;
+        @include prefixer(transform, translate(-50%, -50%));
+    }
+}
+
+
+// 个人信息
+.private-info-div {
+    width: 100%;
+    text-align: center;
+}
+
+
+// 党员信息列表
+.member-table {
+    caption {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    tr {
+        border: 1px solid;
+    }
+    td {
+        border: 1px solid;
+        width: 185px;
+        height: 30px;
+    }
+}

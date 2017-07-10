@@ -1,0 +1,164 @@
+html,
+body {
+  font-size: 16px; }
+
+html {
+  padding: 0px !important;
+  margin: 0px !important; }
+
+body {
+  margin: 0px !important;
+  padding: 0px !important; }
+
+li {
+  list-style: none; }
+
+.clearfix::before,
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+.hide {
+  display: none; }
+
+.student-container {
+  margin: 0 auto;
+  width: 760px;
+  text-align: center;
+  position: relative; }
+
+.student-show-div {
+  width: 100%;
+  position: relative;
+  text-align: center; }
+
+.active {
+  color: black;
+  background: white;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: -3px -3px #ccc;
+  -moz-box-shadow: -3px -3px #ccc;
+  box-shadow: -3px -3px #ccc;
+  }
+
+ul {
+  margin-left: 160px; }
+  ul li {
+    border: 1px solid #314F93;
+    color: white;
+    background: #314F93;
+    line-height: 50px;
+    width: 100px;
+    margin-right: 20px;
+    float: left;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px #ccc;
+    -moz-box-shadow: 3px 3px #ccc;
+    box-shadow: 3px 3px #ccc; }
+    ul li:hover {
+      border: 1px solid #ccc;
+      cursor: pointer;
+      color: black;
+      background: white; }
+
+.intro-letter-div {
+  width: 600px;
+  text-align: right; }
+  .intro-letter-div label {
+    font-weight: bold; }
+  .intro-letter-div input {
+    width: 300px;
+    font-size: 16px;
+    height: 32px;
+    margin-bottom: 5px; }
+  .intro-letter-div span {
+    line-height: 32px;
+    color: red;
+    position: absolute;
+    right: 80px; }
+  .intro-letter-div button {
+    width: 74px;
+    height: 42px;
+    font-size: 18px;
+    color: white;
+    background: #428bca;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+    .intro-letter-div button:hover {
+      background: #3071a9;
+      cursor: pointer; }
+    .intro-letter-div button:focus {
+      background: #3071a9; }
+
+.return-receipt-div {
+  width: 100%;
+  position: relative;
+  text-align: center; }
+  .return-receipt-div button {
+    margin-top: 20px;
+    width: 74px;
+    height: 42px;
+    font-size: 18px;
+    color: white;
+    background: #428bca;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+    .return-receipt-div button:hover {
+      background: #3071a9;
+      cursor: pointer; }
+    .return-receipt-div button:focus {
+      background: #3071a9; }
+
+.upload-img-div {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  transform: translate(-50%);
+  width: 192px;
+  height: 192px;
+  background-image: url(../images/icon_picture.png);
+  background-size: 100% 100%; }
+  .upload-img-div input[type="file"] {
+    border: none;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    opacity: 0; }
+  .upload-img-div .preview-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 98%;
+    max-height: 98%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+.private-info-div {
+  width: 100%;
+  text-align: center; }
+
+.member-table caption {
+  font-size: 18px;
+  font-weight: bold; }
+.member-table tr {
+  border: 1px solid; }
+.member-table td {
+  border: 1px solid;
+  width: 185px;
+  height: 30px; }
+
+/*# sourceMappingURL=student.css.map */

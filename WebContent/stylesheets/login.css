@@ -1,0 +1,89 @@
+html,
+body {
+  font-size: 16px; }
+
+html {
+  padding: 0px !important;
+  margin: 0px !important; }
+
+body {
+  margin: 0px !important;
+  padding: 0px !important; }
+
+li {
+  list-style: none; }
+
+.clearfix::before,
+.clearfix::after {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+.hide {
+  display: none; }
+
+.login-div {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 100px;
+  width: 400px;
+  height: 300px;
+  font-size: 18px;
+  text-align: center; }
+
+.school-badge {
+  padding-bottom: 20px;
+  width: 280;
+  height: 60px;
+  background: url(../images/gdut.png) center center no-repeat; }
+
+label {
+  display: block;
+  padding-top: 22px;
+  position: relative; }
+  label span {
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    bottom: 8px; }
+
+input {
+  border: none;
+  border-bottom: 1px solid #b3b3b3;
+  padding-left: 10px;
+  width: 312px;
+  height: 32px;
+  font-size: 18px;
+  outline: none; }
+  input:focus {
+    border-bottom: 1px solid; }
+
+.login-btn {
+  display: block;
+  position: relative;
+  left: 163px;
+  margin-top: 22px;
+  border: none;
+  width: 74px;
+  height: 42px;
+  font-size: 18px;
+  color: white;
+  background: #428bca;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+  .login-btn:hover {
+    background: #3071a9;
+    cursor: pointer; }
+  .login-btn:focus {
+    background: #3071a9; }
+
+/*# sourceMappingURL=login.css.map */

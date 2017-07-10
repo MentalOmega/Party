@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>学生</title>
+<link rel="stylesheet" href="stylesheets/student.css">
+</head>
+<body>
+	<div class="student-container">
+		<header>
+			<nav>
+				<ul class="clearfix">
+					<li class="intro-letter active">填写介绍信</li>
+					<li class="return-receipt">上传回执</li>
+					<li class="private-info">个人信息</li>
+				</ul>
+			</nav>
+		</header>
+		<div class="student-show-div">
+			<!-- 介绍信div -->
+			<div class="intro-letter-div">
+				<label>接收组织关系的党组织： <input type="text" class="C17">
+				</label><span class="hide">不能为空！</span> <br> <label>本人姓名： <input
+					type="text" class="E18">
+				</label><span class="hide">不能为空！</span> <br> <label>性别： <input
+					type="text" class="R19">
+				</label><span class="hide">不能为空！</span> <br> <label>年龄： <input
+					type="text" class="V19">
+				</label><span class="hide">不能为空！</span> <br> <label>民族： <input
+					type="text" class="Z19">
+				</label><span class="hide">不能为空！</span> <br> <label>正式/预备党员： <input
+					type="text" class="G21">
+				</label><span class="hide">不能为空！</span> <br> <label>身份证号： <input
+					type="text" class="U21">
+				</label><span class="hide">不能为空！</span> <br> <label>学院： <input
+					type="text" class="D22">
+				</label><span class="hide">不能为空！</span> <br> <label>具体去处（基层党委/党支部）：
+					<input type="text" class="S22">
+				</label><span class="hide">不能为空！</span> <br> <label>党费已交年份（格式如2017）：
+					<input type="text" class="R25">
+				</label><span class="hide">不能为空！</span> <br> <label>党费已交月份（格式如07）：
+					<input type="text" class="W25">
+				</label><span class="hide">不能为空！</span> <br> <label>有效期（单位：天，如30）：
+					<input type="text" class="H27">
+				</label><span class="hide">不能为空！</span> <br> <label>填写日期（格式如20170717）：
+					<input type="text" class="V30">
+				</label><span class="hide">不能为空！</span> <br> <label>党员联系电话或其他联系方式：
+					<input type="text" class="P31">
+				</label><span class="hide">不能为空！</span> <br> <label>党员所在基层党委通讯地址：
+					<input type="text" class="P32">
+				</label><span class="hide">不能为空！</span> <br> <label>联系电话： <input
+					type="text" class="H33">
+				</label><span class="hide">不能为空！</span> <br> <label>传真： <input
+					type="text" class="P33">
+				</label><span class="hide">不能为空！</span> <br> <label>邮编： <input
+					type="text" class="Z33">
+				</label><span class="hide">不能为空！</span> <br>
+				<button class="intro-submit">
+					提交
+					<tton>
+			</div>
+			<!-- 上传回执div -->
+			<div class="return-receipt-div hide">
+				<div class="upload-img-div">
+					<img src="images/icon_picture.png" class="preview-img"> <input
+						type="file" accept="image/*" class="img-input">
+				</div>
+				<button class="return-submit">
+					提交
+					<tton>
+			</div>
+			<!-- 个人信息div -->
+			<div class="private-info-div hide">
+				<div class="memberInfo">
+					<table cellspacing="0" class="member-table">
+						<caption>党员简要信息</caption>
+						<tr>
+							<td>姓名</td>
+							<td colspan="3"></td>
+						</tr>
+						<tr>
+							<td>性别</td>
+							<td></td>
+							<td>出生日期</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>民族</td>
+							<td></td>
+							<td>入党日期</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>籍贯</td>
+							<td></td>
+							<td>转正日期</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>学历</td>
+							<td></td>
+							<td>单位</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>所在党支部</td>
+							<td colspan="3"></td>
+						</tr>
+						<tr>
+							<td>身份证号</td>
+							<td></td>
+							<td>电子邮箱</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>手机号码</td>
+							<td></td>
+							<td>工作电话</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>现居住地</td>
+							<td colspan="3"></td>
+						</tr>
+						<tr>
+							<td>奖惩情况</td>
+							<td colspan="3"></td>
+						</tr>
+						<tr>
+							<td>党内职务</td>
+							<td colspan="3"></td>
+						</tr>
+						<tr>
+							<td>行政职务</td>
+							<td colspan="3"></td>
+						</tr>
+						<tr>
+							<td>个人身份</td>
+							<td colspan="3"></td>
+						</tr>
+						<tr>
+							<td>专业技术职务</td>
+							<td colspan="3"></td>
+						</tr>
+						<tr>
+							<td>工作日期</td>
+							<td colspan="3"></td>
+						</tr>
+						<tr>
+							<td>组织关系所在单位</td>
+							<td colspan="3"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="javascripts/jquery-3.1.1.js"></script>
+	<script src="javascripts/common.js"></script>
+	<script src="javascripts/request.js"></script>
+	<script src="javascripts/student.js"></script>
+</body>
+<ml>

@@ -1,0 +1,75 @@
+@import "base";
+$loginDivWidth: 400px !default;
+$loginDivHeight: 300px !default;
+$loginBtnWidth: 74px !default;
+$loginBtnHeight: 42px !default;
+$fontSize: 18px !default;
+
+// 登录框
+.login-div {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 100px;
+    width: $loginDivWidth;
+    height: $loginDivHeight;
+    font-size: $fontSize;
+    text-align: center;
+}
+
+// 校徽
+.school-badge {
+    padding-bottom: 20px;
+    width: 280;
+    height: 60px;
+    background: url(../images/gdut.png) center center no-repeat;
+}
+
+label {
+    display: block;
+    padding-top: 22px;
+    position: relative;
+
+    span {
+        color: red;
+        font-weight:bold;
+        position: absolute;
+        right: 20px;
+        bottom: 8px;
+    }
+}
+
+// 输入框
+input {
+    border: none;
+    border-bottom: 1px solid #b3b3b3;
+    padding-left: 10px;
+    width: 312px;
+    height: 32px;
+    font-size: $fontSize;
+    outline: none;
+    &:focus {
+        border-bottom: 1px solid;
+    }
+}
+
+// 登录按钮
+.login-btn {
+    display: block;
+    position: relative;
+    left: $loginDivWidth/2-$loginBtnWidth/2;
+    margin-top: 22px;
+    border: none;
+    width: $loginBtnWidth;
+    height: $loginBtnHeight;
+    font-size: $fontSize;
+    color: white;
+    background: #428bca;
+    @include prefixer(border-radius, 5px);
+    &:hover {
+        background: #3071a9;
+        cursor: pointer;
+    }
+    &:focus {
+        background: #3071a9;
+    }
+}
